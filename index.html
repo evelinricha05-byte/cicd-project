@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Cloud Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+            padding: 50px 30px;
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            background: #22c55e;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #38bdf8;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #dbeafe;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 180px;
+            padding: 25px 15px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .card p {
+            color: #e2e8f0;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 35px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="badge">CI/CD PIPELINE ACTIVE</div>
+
+        <h1>Cloud & <span>DevOps</span> Project</h1>
+
+        <p class="subtitle">
+            Automated deployment using Docker, Jenkins, Terraform, AWS & GitHub
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Docker</h3>
+                <p>Containerized application</p>
+            </div>
+
+            <div class="card">
+                <h3> Jenkins</h3>
+                <p>Continuous Integration & Deployment</p>
+            </div>
+
+            <div class="card">
+                <h3>AWS</h3>
+                <p>Cloud infrastructure with EC2</p>
+            </div>
+
+            <div class="card">
+                <h3>Terraform</h3>
+                <p>Infrastructure as Code</p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Built as a PEP Cloud & DevOps CI/CD Project
+        </div>
+
+    </div>
+
+</body>
+</html>
