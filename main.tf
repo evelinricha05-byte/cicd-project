@@ -18,8 +18,8 @@ resource "aws_instance" "cicd_ec2" {
 
   user_data = <<-EOF
               #!/bin/bash
-              apt-get update -y
-              apt-get install -y docker.io
+             apt-get update -y
+             apt-get install -y docker.io ec2-instance-connect
               systemctl start docker
               systemctl enable docker
               usermod -aG docker ubuntu
