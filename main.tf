@@ -25,7 +25,11 @@ resource "aws_instance" "cicd_ec2" {
               usermod -aG docker ubuntu
               EOF
 
-  tags = {
+    tags = {
     Name = "CI-CD-EC2"
   }
+}
+
+output "ec2_public_ip" {
+  value = aws_instance.cicd_ec2.public_ip
 }
